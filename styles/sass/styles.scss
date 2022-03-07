@@ -17,7 +17,5 @@
 // h5: 14px;
 
 @import "./partials/setup";
-
-body {
-    background: royalblue;
-}
+@import "./partials/variables";
+@import "./partials/typography";
