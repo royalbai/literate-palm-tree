@@ -560,6 +560,34 @@ header .headerContent .contentContainer {
   margin: 0 auto;
 }
 
+.contactHeader {
+  background-color: #f1d2d2;
+  padding-top: 120px;
+}
+.contactHeader .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+.contactHeader:after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(../assets/wave.svg);
+  background-color: #f1d2d2;
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+}
+
 footer {
   background-color: #084b6d;
   color: #fff;
@@ -640,7 +668,7 @@ footer .social i {
   transition: 0.2s;
 }
 footer .social i:hover, footer .social i:focus {
-  color: #d1b5b5;
+  color: #f1d2d2;
 }
 
 .gallery {
@@ -696,6 +724,25 @@ footer .social i:hover, footer .social i:focus {
   footer .newsletter {
     width: 70%;
   }
+
+  .mapFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mapFormContainer .map {
+    margin-bottom: 50px;
+    width: 85%;
+  }
+
+  .contactForm {
+    width: 85%;
+    margin-left: 0;
+  }
 }
 @media (max-width: 500px) {
   .announcements {
@@ -712,6 +759,7 @@ footer .social i:hover, footer .social i:focus {
 
   footer .footerFlexContainer {
     margin-bottom: 60px;
+    width: 100%;
   }
   footer .footerNav nav {
     -webkit-box-orient: vertical;
@@ -722,6 +770,7 @@ footer .social i:hover, footer .social i:focus {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    width: 100%;
   }
   footer .footerNav nav ul {
     margin-bottom: 24px;
@@ -739,4 +788,99 @@ footer .social i:hover, footer .social i:focus {
   footer .socialIcons {
     margin-bottom: 30px;
   }
+}
+.mapFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mapFormContainer .map {
+  width: 50%;
+}
+.mapFormContainer .map iframe {
+  width: 100%;
+}
+
+.contactForm {
+  width: calc(50% - 70px);
+  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm input, .contactForm textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Jakarta Sans";
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.contactForm input::placeholder, .contactForm textarea::placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.contactForm input:focus, .contactForm textarea:focus {
+  border-bottom: 1px solid #084b6d;
+}
+.contactForm input {
+  border-bottom: 1px solid #b9b9b9;
+}
+.contactForm textarea {
+  min-height: 130px;
+  border-bottom: 1px solid #b9b9b9;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  padding: 0 0 10px 5px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #b9b9b9;
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+}
+
+option {
+  font-family: "Jakarta Sans";
 }
