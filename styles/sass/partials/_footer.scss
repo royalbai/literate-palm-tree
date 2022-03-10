@@ -30,6 +30,7 @@ footer {
                 padding: 18px 20px;
                 margin-bottom: 20px;
                 width: 100%;
+                border-radius: 0;
 
                 &:focus {
                     border: 2px solid $solidWhite;
@@ -51,7 +52,7 @@ footer {
                 justify-content: space-between;
 
                 ul {
-                    width: calc(100% / 3);
+                    width: 33%;
                 }
             }
 
