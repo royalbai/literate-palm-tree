@@ -605,14 +605,14 @@ footer .footerFlexContainer {
 footer .footerFlexContainer h4 {
   color: #fff;
 }
-footer .footerFlexContainer .newsletter {
+footer .newsletter {
   margin-right: 50px;
   width: calc(40% - 50px);
 }
-footer .footerFlexContainer .newsletter form {
+footer .newsletter form {
   position: relative;
 }
-footer .footerFlexContainer .newsletter input {
+footer .newsletter input {
   background-color: transparent;
   color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -622,19 +622,20 @@ footer .footerFlexContainer .newsletter input {
   padding: 18px 20px;
   margin-bottom: 20px;
   width: 100%;
+  border-radius: 0;
 }
-footer .footerFlexContainer .newsletter input:focus {
+footer .newsletter input:focus {
   border: 2px solid #fff;
 }
-footer .footerFlexContainer .newsletter .secondary {
+footer .newsletter .secondary {
   position: absolute;
   top: 8px;
   right: 8px;
 }
-footer .footerFlexContainer .footerNav {
+footer .footerNav {
   width: 40%;
 }
-footer .footerFlexContainer .footerNav nav {
+footer .footerNav nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,15 +643,15 @@ footer .footerFlexContainer .footerNav nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer .footerFlexContainer .footerNav nav ul {
-  width: 33.3333333333%;
+footer .footerNav nav ul {
+  width: 33%;
 }
-footer .footerFlexContainer .footerNav a {
+footer .footerNav a {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
-footer .footerFlexContainer .footerNav a:hover, footer .footerFlexContainer .footerNav a:focus {
+footer .footerNav a:hover, footer .footerNav a:focus {
   color: #fff;
 }
 footer .social {
@@ -698,113 +699,6 @@ footer .social i:hover, footer .social i:focus {
   display: block;
 }
 
-@media (max-width: 1000px) {
-  footer .footerFlexContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 100px;
-  }
-  footer .newsletter {
-    width: 50%;
-    margin: 0 0 30px 0;
-  }
-  footer .footerNav {
-    width: 80%;
-  }
-  footer .footerNav nav ul {
-    width: auto;
-  }
-
-  .mapFormContainer .map {
-    width: 45%;
-  }
-
-  .contactForm {
-    width: calc(55% - 50px);
-    margin-left: 50px;
-  }
-}
-@media (max-width: 800px) {
-  footer .newsletter {
-    width: 70%;
-  }
-
-  .mapFormContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mapFormContainer .map {
-    margin-bottom: 50px;
-    width: 85%;
-  }
-
-  .contactForm {
-    width: 85%;
-    margin-left: 0;
-  }
-}
-@media (max-width: 500px) {
-  .announcements {
-    display: none;
-  }
-
-  .slideOutNav {
-    width: 100%;
-  }
-  .slideOutNav .mainMenu a {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  footer {
-    width: 100%;
-  }
-  footer .footerFlexContainer {
-    margin-bottom: 60px;
-    width: 100%;
-  }
-  footer .footerNav nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-  footer .footerNav nav ul {
-    margin-bottom: 24px;
-    width: 100%;
-  }
-  footer .social {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .socialIcons {
-    margin-bottom: 30px;
-  }
-
-  .mapFormContainer .map {
-    width: 100%;
-  }
-}
 .mapFormContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,4 +797,115 @@ select {
 
 option {
   font-family: "Jakarta Sans";
+}
+
+@media (max-width: 1000px) {
+  footer .footerFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px;
+  }
+  footer .footerFlexContainer .logo {
+    margin: 0 0 30px 0;
+  }
+  footer .newsletter {
+    width: 50%;
+    margin: 0 0 60px 0;
+  }
+  footer .footerNav {
+    width: 80%;
+  }
+  footer .footerNav nav ul {
+    width: auto;
+  }
+
+  .mapFormContainer .map {
+    width: 45%;
+  }
+
+  .contactForm {
+    width: calc(55% - 50px);
+    margin-left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  footer .newsletter {
+    width: 70%;
+  }
+
+  .mapFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mapFormContainer .map {
+    margin-bottom: 50px;
+    width: 85%;
+  }
+
+  .contactForm {
+    width: 85%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .announcements {
+    display: none;
+  }
+
+  .slideOutNav {
+    width: 100%;
+  }
+  .slideOutNav .mainMenu a {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    width: 100%;
+  }
+  footer .footerFlexContainer {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  footer .footerNav nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  footer .footerNav nav ul {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  footer .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .socialIcons {
+    margin-bottom: 30px;
+  }
+
+  .mapFormContainer .map {
+    width: 100%;
+  }
 }
